@@ -1,9 +1,7 @@
-
 package ejercicio_pnt;
 
-
 public abstract class Producto implements Comparable<Producto> {
-    
+
     protected String nombre;
     protected double precio;
 
@@ -11,10 +9,9 @@ public abstract class Producto implements Comparable<Producto> {
         this.nombre = nombre;
         this.precio = precio;
     }
-    
 
     public Producto() {
-        
+
     }
 
     public String getNombre() {
@@ -34,19 +31,16 @@ public abstract class Producto implements Comparable<Producto> {
     }
 
     @Override
-    public int compareTo(Producto o){
-     
-        if (this.precio>o.getPrecio()) {
+    public int compareTo(Producto o) {
+
+        if (this.precio > o.getPrecio()) {
             return 1;
         }
-        if (this.precio<o.getPrecio()) {
+        if (this.precio < o.getPrecio()) {
             return -1;
         }
         return 0;
-        
-    }
-    
 
-    
-    
+    }
+
 }
